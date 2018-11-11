@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
-import './Home.css';
+import './NaveBar.css';
 
-class Home extends Component {
+class NaveBar extends Component {
     render() {
         return(
             <div>
-                Home
+
             </div>
         );
     }
 }
 
-export default Home;
+export default NaveBar;
