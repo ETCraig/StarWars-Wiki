@@ -21,7 +21,10 @@ massive(process.env.CONNECTION_STRING).then(dbInstance =>{
 
 app.post('/api/auth/login', ctrl.Login);
 app.post('/api/auth/register', ctrl.Register);
-
+app.get('/api/getCharacters', ctrl.GetCharacters);
+app.get('/api/getFactions', ctrl.getFactions);
+app.get('/api/getPlanets', ctrl.getPlanets);
+app.get('/api/getShips', ctrl.getShips);
 
 const port = 3200;
 app.listen(port, () => {console.log(`Listening and Operating on: ${port}`)});

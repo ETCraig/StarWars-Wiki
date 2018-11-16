@@ -66,19 +66,19 @@ class Login extends Component {
                             <button type="submit" className="primary-btn" onClick={this.handleLoginRequest}>Sign In</button>
                         </form>
                         <div className="links">
-                            <a href="#">Forgot Password</a>
+                            <a href="www.google.com">Forgot Password</a>
                         </div>
                         <div className="or">
                             <hr className="bar" />
                             <span>OR</span>
                             <hr className="bar" />
                         </div>
-                        <a href="#" className="secondary-btn" onClick={this.handleRegisterRequest}>Create an account</a>
+                        <a href="www.google.com" className="secondary-btn" onClick={this.handleRegisterRequest}>Create an account</a>
                         </div>
                         <footer id="main-footer">
                         <p>Copyright &copy; 2018, STAR WARS Wiki All Rights Reserved</p>
                         <div>
-                            <a href="#">terms of use</a> | <a href="#">Privacy Policy</a>
+                            <a href="www.google.com">terms of use</a> | <a href="www.google.com">Privacy Policy</a>
                         </div>
                         </footer>
                     </div>

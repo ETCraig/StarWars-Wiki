@@ -1,0 +1,1 @@
+SELECT * FROM SW_Ships;
