@@ -25,14 +25,17 @@ class Ships extends Component {
                 <Nav />
                 <br />
                 <div id='Ships-Container'>
+                <h1 className='Title'>Capital Ships</h1>
+                    <div className='Ships-Wrap'>
                     {displayShips.map((Ship, i) => {
                             return (
-                                <div key={i} className='Routine-Exercises'>
-                                    <img src={Ship.image} alt='Motion Pic' />
-                                    <h1>{Ship.name}</h1>
+                                <div key={i} className='Ships-Container'>
+                                    <h2>{Ship.name}</h2>
+                                    <img src={Ship.image} alt='Ships' className='Ship' />
                                 </div>
                             );
                         })}
+                    </div>
                 </div>
             </div>
         );

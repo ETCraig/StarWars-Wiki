@@ -1,0 +1,36 @@
+#Factions-Container {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Title {
+    color: #f3f3f3;
+    font-weight: 600;
+    font-size: 44px;
+}
+.Factions-Wrap {
+    -webkit-column-count: 3;
+    margin-bottom: 20px;
+}
+.Factions-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Factions-Container h2 {
+    color: #ccc;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2em;
+}
+.Factions-Container h2:hover {
+    color: #f3f3f3;
+    cursor: pointer;
+}
+.Faction {
+    min-height: 200px;
+    max-height: 225px;
+    min-width: 200px;
+    max-width: 225px;
+    margin: 50px;
+}

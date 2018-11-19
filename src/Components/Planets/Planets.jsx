@@ -25,14 +25,17 @@ class Planets extends Component {
                 <Nav />
                 <br />
                 <div id='Planets-Container'>
-                    {displayPlanets.map((Planet, i) => {
-                            return (
-                                <div key={i} className='Routine-Exercises'>
-                                    <img src={Planet.image} alt='Motion Pic' />
-                                    <h1>{Planet.name}</h1>
-                                </div>
-                            );
-                        })}
+                <h1 className='Title'>Known Planets</h1>
+                    <div className='Wrap'>
+                        {displayPlanets.map((Planet, i) => {
+                                return (
+                                    <div key={i} className='Planets-Container'>
+                                        <h2>{Planet.name}</h2>
+                                        <img src={Planet.image} alt='Planets Pic' className='Planet' />
+                                    </div>
+                                );
+                            })}
+                    </div>
                 </div>
             </div>
         );

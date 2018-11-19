@@ -24,15 +24,18 @@ class Characters extends Component {
             <div>
                 <Nav />
                 <br />
-                <div id='List-Container'>
-                    {displayCharacters.map((Character, i) => {
-                        return (
-                            <div key={i} className='Routine-Exercises'>
-                                <img src={Character.image} alt='Motion Pic' />
-                                <h1>{Character.name}</h1>
-                            </div>
-                        );
-                    })}
+                <div id='Characters-Container'>
+                <h1 className='Title'>Characters</h1>
+                    <div className='Characters-Wrap'>
+                        {displayCharacters.map((Character, i) => {
+                            return (
+                                <div key={i} className='Characters-Container'>
+                                    <h2>{Character.name}</h2>
+                                    <img src={Character.image} alt='Character' className='Character' />
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         );

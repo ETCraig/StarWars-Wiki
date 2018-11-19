@@ -1,0 +1,28 @@
+#Characters-Container {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Characters-Wrap {
+    -webkit-column-count: 2;
+    margin-bottom: 20px;
+}
+.Characters-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Characters-Container h2 {
+    color: #ccc;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2em;
+}
+.Characters-Container h2:hover {
+    color: #f3f3f3;
+    cursor: pointer;
+}
+.Character {
+    height: 300px;
+    width: 275px;
+}

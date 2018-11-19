@@ -25,14 +25,17 @@ class Factions extends Component {
                 <Nav />
                 <br />
                 <div id='Factions-Container'>
-                    {displayFactions.map((Faction, i) => {
-                            return (
-                                <div key={i} className='Routine-Exercises'>
-                                    <img src={Faction.image} alt='Motion Pic' />
-                                    <h1>{Faction.name}</h1>
-                                </div>
-                            );
-                        })}
+                <h1 className='Title'>Main Factions</h1>
+                    <div className='Factions-Wrap'>
+                        {displayFactions.map((Faction, i) => {
+                                return (
+                                    <div key={i} className='Factions-Container'>
+                                        <h2>{Faction.name}</h2>
+                                        <img src={Faction.fac_image} alt='Faction' className='Faction' />
+                                    </div>
+                                );
+                            })}
+                    </div>
                 </div>
             </div>
         );
