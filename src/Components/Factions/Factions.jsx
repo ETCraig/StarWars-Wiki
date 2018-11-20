@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './Factions.css';
 
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 import Nav from '../NavBar/NavBar';
 
 class Factions extends Component {
@@ -30,7 +31,7 @@ class Factions extends Component {
                         {displayFactions.map((Faction, i) => {
                                 return (
                                     <div key={i} className='Factions-Container'>
-                                        <h2>{Faction.name}</h2>
+                                        <Link to={`/Faction/${Faction.fac_id}`} style={{textDecoration:'none'}}><h2>{Faction.name}</h2></Link>
                                         <img src={Faction.fac_image} alt='Faction' className='Faction' />
                                     </div>
                                 );

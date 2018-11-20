@@ -1,0 +1,1 @@
+SELECT * FROM SW_Characters WHERE char_id = $1;

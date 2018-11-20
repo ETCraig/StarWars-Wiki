@@ -1,0 +1,1 @@
+SELECT * FROM SW_Factions WHERE fac_id = $1;

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './Ships.css';
 
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 import Nav from '../NavBar/NavBar';
 
 class Ships extends Component {
@@ -30,7 +31,7 @@ class Ships extends Component {
                     {displayShips.map((Ship, i) => {
                             return (
                                 <div key={i} className='Ships-Container'>
-                                    <h2>{Ship.name}</h2>
+                                    <Link to={`/Ship/${Ship.ship_id}`} style={{textDecoration:'none'}}><h2>{Ship.name}</h2></Link>
                                     <img src={Ship.image} alt='Ships' className='Ship' />
                                 </div>
                             );

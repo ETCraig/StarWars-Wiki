@@ -1,0 +1,1 @@
+SELECT * FROM SW_Planets WHERE plan_id = $1;

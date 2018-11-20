@@ -21,10 +21,14 @@ massive(process.env.CONNECTION_STRING).then(dbInstance =>{
 
 app.post('/api/auth/login', ctrl.Login);
 app.post('/api/auth/register', ctrl.Register);
-app.get('/api/getCharacters', ctrl.GetCharacters);
+app.get('/api/getCharacters', ctrl.getCharacters);
+app.get('/api/getCharacter/:char_id', ctrl.getCharacter);
 app.get('/api/getFactions', ctrl.getFactions);
+app.get('/api/getFaction/:fac_id', ctrl.getFaction);
 app.get('/api/getPlanets', ctrl.getPlanets);
+app.get('/api/getPlanet/:plan_id', ctrl.getPlanet);
 app.get('/api/getShips', ctrl.getShips);
+app.get('/api/getShip/:ship_id', ctrl.getShip);
 
 const port = 3200;
 app.listen(port, () => {console.log(`Listening and Operating on: ${port}`)});

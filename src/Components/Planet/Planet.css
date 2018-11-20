@@ -1,0 +1,44 @@
+#Planet-Container {
+    margin-top: 5em;
+    background: rgb(29, 29, 29);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: #f3f3f3;
+}
+.Planet-Title {
+    background-color: #999999;
+    height: 65px;
+    margin-top: -29px;
+}
+.Planet-Container h1{
+    color: #f3f3f3;
+    font-weight: 600;
+    font-size: 44px;
+    padding-left: 15px;
+}
+.Planet-Container p {
+    font-size: 25px;
+    padding: 15px;
+    text-align: left;
+}
+.Planet-Column {
+    text-align: center;
+    clear: right;
+    float: right;
+    width: 250px;
+    margin: 0 0 15px 15px;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #999999;
+}
+.Planet-Planet {
+    height: 225px;
+    width: 225px;
+    text-align: center;
+    border-radius:50%;
+    overflow:hidden;
+}

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './Planets.css';
 
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 import Nav from '../NavBar/NavBar';
 
 class Planets extends Component {
@@ -30,7 +31,7 @@ class Planets extends Component {
                         {displayPlanets.map((Planet, i) => {
                                 return (
                                     <div key={i} className='Planets-Container'>
-                                        <h2>{Planet.name}</h2>
+                                        <Link to={`/Planet/${Planet.plan_id}`} style={{textDecoration:'none'}}><h2>{Planet.name}</h2></Link>
                                         <img src={Planet.image} alt='Planets Pic' className='Planet' />
                                     </div>
                                 );

@@ -29,7 +29,7 @@ module.exports = {
             }
         });
     },
-    GetCharacters: (req, res) => {
+    getCharacters: (req, res) => {
         console.log('Hit Register Ctrl.')
         const db = req.app.get('db');
         console.log('Passed DB.')
@@ -41,8 +41,20 @@ module.exports = {
             res.status(500).send(err);
         });
     },
+    getCharacter: (req, res) => {
+        console.log('Hit getCharacter Back');
+        const db = req.app.get('db');
+        console.log('Passed DB')
+        db.Get_Character(req.params.char_id).then(data => {
+            console.log('data', data);
+            res.status(200).send(data);
+        }).catch(err => {
+            console.log('err', err);
+            res.status(500).send(err);
+        });
+    },
     getFactions: (req, res) => {
-        console.log('Hit Register Ctrl.')
+        console.log('Hit getFactions Ctrl.')
         const db = req.app.get('db');
         console.log('Passed DB.')
         db.Get_Factions().then(data => {
@@ -53,8 +65,20 @@ module.exports = {
             res.status(500).send(err);
         });
     },
+    getFaction: (req, res) => {
+        console.log('Hit getFaction Back.')
+        const db = req.app.get('db');
+        console.log('Passed DB.')
+        db.Get_Faction(req.params.fac_id).then(data => {
+            console.log('data', data);
+            res.status(200).send(data);
+        }).catch(err => {
+            console.log('err', err);
+            res.status(500).send(err);
+        });
+    },
     getPlanets: (req, res) => {
-        console.log('Hit Register Ctrl.')
+        console.log('Hit getPlanets Ctrl.')
         const db = req.app.get('db');
         console.log('Passed DB.')
         db.Get_Planets().then(data => {
@@ -65,8 +89,20 @@ module.exports = {
             res.status(500).send(err);
         });
     },
+    getPlanet: (req, res) => {
+        console.log('Hit getPlanet Back.')
+        const db = req.app.get('db');   
+        console.log('Passed DB.');
+        db.Get_Planet(req.params.plan_id).then(data => {
+            console.log('data', data);
+            res.status(200).send(data);
+        }).catch(err => {
+            console.log('err', err);
+            res.status(500).send(err);
+        });
+    },
     getShips: (req, res) => {
-        console.log('Hit Register Ctrl.')
+        console.log('Hit getShips Ctrl.')
         const db = req.app.get('db');
         console.log('Passed DB.')
         db.Get_Ships().then(data => {
@@ -74,6 +110,18 @@ module.exports = {
             res.status(200).send(data);
         }).catch(err => {
             console.eog('err', err);
+            res.status(500).send(err);
+        });
+    },
+    getShip: (req, res) => {
+        console.log('Hit getShip Back.')
+        const db = req.app.get('db');
+        console.log('Passed DB.')
+        db.Get_Ship(req.params.ship_id).then(data => {
+            console.log('data', data);
+            res.status(200).send(data);
+        }).catch(err => {
+            console.log('err', err);
             res.status(500).send(err);
         });
     },

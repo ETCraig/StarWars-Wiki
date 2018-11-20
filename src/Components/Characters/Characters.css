@@ -3,6 +3,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgb(29, 29, 29);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: #f3f3f3;
 }
 .Characters-Wrap {
     -webkit-column-count: 2;
@@ -19,7 +27,7 @@
     font-size: 2.2em;
 }
 .Characters-Container h2:hover {
-    color: #f3f3f3;
+    color: #ffd700;
     cursor: pointer;
 }
 .Character {
